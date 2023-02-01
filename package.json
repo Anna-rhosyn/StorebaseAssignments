@@ -1,0 +1,43 @@
+{
+  "name": "storebase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "blocking.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint *.js",
+    "prettier": "./node_modules/.bin/prettier *.js"
+  },
+  "eslintConfig": {
+    "extends": "plugin:unicorn/recommended",
+    "env": {
+			"es2022": true
+		},
+		"parserOptions": {
+			"ecmaVersion": "latest",
+			"sourceType": "module"
+		},
+		"plugins": [
+			"unicorn"
+		],
+		"rules": {
+			"unicorn/better-regex": "error",
+			"unicorn/…": "error"
+		}
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anna-rhosyn/Assignments.git"
+  },
+  "author": "Anna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anna-rhosyn/Assignments/issues"
+  },
+  "homepage": "https://github.com/Anna-rhosyn/Assignments#readme",
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "eslint-plugin-unicorn": "^45.0.2",
+    "prettier": "2.8.3"
+  }
+}
