@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 async function delay(ms) {
@@ -11,3 +12,18 @@ async function delay(ms) {
 }
 
 delay(3000);
+=======
+function Time(data, ms) {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(data), ms);
+  });
+}
+
+async function delay(data, ms) {
+  await Time(data, ms).then((a) => {
+    console.log(a);
+  });
+}
+
+delay("This is delay Content", 3000);
+>>>>>>> abf0e16 (sec commit)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var fs = require("fs");
 
 function file() {
@@ -30,3 +31,44 @@ async function asyncfile() {
   });
 }
 asyncfile();
+=======
+const fs = require("fs");
+
+async function Read(start, end) {
+  return new Promise((resolve) => {
+    fs.readFile(start, (err, data) => {
+      if (err) {
+        console.log("error reading");
+      } else {
+        console.log("read the file");
+        resolve(Write(end, data));
+      }
+    });
+  });
+}
+
+async function Write(end, src) {
+  return new Promise((resolve) => {
+    fs.writeFile(end, src, (err) => {
+      if (err) {
+        console.log("error copying");
+      }
+      console.log(`Succesfully copying the file.`);
+      resolve(end);
+    });
+  });
+}
+
+async function copy(start, end) {
+  await Read(start, end).then((final) => {
+    fs.readFile(final, (err, data) => {
+      if (err) {
+        console.log("error printing Content");
+      }
+      console.log(`Content in the Destination file is : \n ${data}`);
+    });
+  });
+}
+
+copy("src.txt", "dest.txt");
+>>>>>>> abf0e16 (sec commit)

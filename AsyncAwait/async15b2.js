@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -43,3 +44,39 @@ async function factorial(x, y) {
   });
 }
 factorial(2, 6);
+=======
+async function factorial(x) {
+  return new Promise((resolve) => {
+    if (x === 0 || x === 1) return 1;
+    for (let i = x - 1; i >= 1; i--) {
+      x *= i;
+    }
+    setTimeout(() => {
+      resolve(x);
+    }, 2000);
+  });
+}
+
+function power(x, y) {
+  return new Promise((resolve) => {
+    var res = x;
+    for (var i = 1; i < y; i++) {
+      res = res * x;
+    }
+    setTimeout(() => {
+      resolve(res);
+    }, 2000);
+  });
+}
+
+async function final(x, y) {
+  let total = 0;
+  total += await factorial(x);
+  total += await factorial(y);
+  total += await power(x, y);
+  total += await power(y, x);
+  console.log(`final result is ${total}`);
+}
+
+final(2, 6);
+>>>>>>> abf0e16 (sec commit)

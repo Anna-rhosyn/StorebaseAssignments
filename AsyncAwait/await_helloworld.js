@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function helloworld(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -36,3 +37,35 @@ async function world() {
 }
 
 world();
+=======
+async function Delay(a) {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(a), 1000);
+  });
+}
+
+async function hello() {
+  a = await Delay("h");
+  console.log(a);
+  a = await Delay("e");
+  console.log(a);
+  a = await Delay("l");
+  console.log(a);
+  a = await Delay("l");
+  console.log(a);
+  a = await Delay("o");
+  console.log(a);
+  a = await Delay("w");
+  console.log(a);
+  a = await Delay("o");
+  console.log(a);
+  a = await Delay("r");
+  console.log(a);
+  a = await Delay("l");
+  console.log(a);
+  a = await Delay("d");
+  console.log(a);
+}
+
+hello();
+>>>>>>> abf0e16 (sec commit)

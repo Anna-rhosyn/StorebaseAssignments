@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 Hi,
+=======
+Hi,
+>>>>>>> abf0e16 (sec commit)
 This is an example of fs module.
