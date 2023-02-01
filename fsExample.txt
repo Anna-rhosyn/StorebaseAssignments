@@ -1,2 +1,0 @@
-Hi,
-This is an example of fs module.
