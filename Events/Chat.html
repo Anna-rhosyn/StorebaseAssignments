@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Chat.css">
+    <title>Event</title>
+</head>
+<body>
+    <div class="container">
+            <div class="col1">
+                <h4>Person1</h4>
+                <div  id="msg1"></div>
+                <input type="text" id="p1" style="width: 70%; height: 30px;"> 
+                <button style="width: 25%; height: 35px;" onclick="show2()"> Send</button> 
+            </div>
+            <div class="col2">
+                <h4>Person2</h4>
+                    <div  id="msg2"></div>
+                    <input type="text" id="p2" style="width: 70%; height: 30px;">
+                    <button style="width: 25%; height: 35px;" onclick="show1()">Send</button>   
+               </div>
+        <script src="Chat.js"></script>
+    </div>
+    
+</body>
+</html>
