@@ -13,5 +13,6 @@ Person.prototype.getFullName = function () {
 };
 
 let p1 = new Person("john", "carter");
+console.log(p1);
 console.log(`Full name: ${p1.getFullName()}`);
 console.log(`First name: ${p1.fname}`);
