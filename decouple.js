@@ -21,4 +21,5 @@ const final = (x, y) => {
   let yPower = power(y, x);
   return x_F + y_F + xPower + yPower;
 };
+console.log('Start');
 console.log(final(2, 6));
