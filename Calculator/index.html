@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="main">
+        <h1>Calculator</h1>
+        <div id="calc">
+            <div class="row">
+               <div class="sign" style="margin-left: 30px; " onclick="display('-')" >-</div>
+               <div class="col">
+                <input type="text" id="input">
+               </div>
+               <div class="sign" style="margin-right: 30px; margin-left: 0px;" onclick="display('+')">+</div>
+            </div>
+            <div class="row">
+              <div class="no fircol" onclick="display('1')" >1</div>
+              <div class="no secndsec" onclick="display('2')">2</div>
+              <div class="no secndsec" onclick="display('3')">3</div>
+            </div>
+            <div class="row">
+                <div class="no fircol" onclick="display('4')">4</div>
+                <div class="no secndsec" onclick="display('5')">5</div>
+                <div class="no secndsec" onclick="display('6')">6</div>
+            </div>
+            <div class="row">
+                <div class="no fircol" onclick="display('7')">7</div>
+                <div class="no secndsec" onclick="display('8')">8</div>
+                <div class="no secndsec" onclick="display('9')">9</div>
+            </div>
+            <div class="row" style="margin-bottom: 20px;">
+                <div class="no fircol clr" onclick="clr()">C</div>
+                <div class="no secndsec" onclick="display('0')">0</div>
+                <div class="no secndsec equal" onclick="solve()">=</div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

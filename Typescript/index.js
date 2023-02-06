@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var message = "hello world";
+console.log(message);
+var x = 10;
+var y = 20;
+var isBeginer = true;
+var total = 0;
+var name = "anna";
+var sentence = "My name is ".concat(name, "\nIam a beginner in typescript");
+console.log(sentence);

@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    font-size: 45px;
+    margin-top: 40px;
+}
+
+input{
+    width: 210px;
+     height: 40px;
+     border-radius: 25px;
+     color: black;
+     border: 2px solid black;
+    padding: 20px 10px 10px 25px;
+    margin:10px 20px 20px 20px;
+    font-size: 40px;
+    background-color: lightslategray;
+    justify-content: center;
+}
+
+#calc{
+    border: 3px solid black;
+    background-color: rgb(72, 71, 71);
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 26px;
+    width: 350px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.no{
+    border: 2px solid black;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    padding: 14px;
+    align-items: center;
+    text-align: center;
+}
+.no:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.sign{
+    border: 2px solid black;
+    background-color: rgb(243, 222, 222);
+    align-items: center;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    padding: 10px 10px 20px 10px;
+    /* background-color: yellow; */
+}
+.sign:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.clr{
+    background-color: rgb(201, 207, 155);
+}
+.clr:hover{
+    background-color: green;
+}
+.secndsec{
+  margin-left: 55px;
+  margin-top: 30px;
+}
+.fircol{
+    margin-top: 30px;
+}
+.zero{
+    margin-top: 30px;
+}
